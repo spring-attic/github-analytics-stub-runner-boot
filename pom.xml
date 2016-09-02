@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.springframework.github</groupId>
+	<groupId>com.example.github</groupId>
 	<artifactId>github-analytics-stub-runner-boot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -25,6 +25,14 @@
 		<spring-cloud-contract.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-contract.version>
 		<spring-cloud-bom.version>Camden.BUILD-SNAPSHOT</spring-cloud-bom.version>
 	</properties>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>repo.spring.io</id>
+			<name>Spring Snapshot Repository</name>
+			<url>https://repo.spring.io/libs-snapshot-local</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<dependencies>
 		<dependency>
