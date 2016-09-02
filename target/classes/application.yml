@@ -1,8 +1,0 @@
-eureka:
-  instance.leaseRenewalIntervalInSeconds: 1
-  client:
-    enabled: true
-    registerWithEureka: false
-    fetchRegistry: false
-
-stubrunner.cloud.stubbed.discovery.enabled: false

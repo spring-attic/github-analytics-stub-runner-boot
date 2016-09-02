@@ -1,1 +1,2 @@
 stubrunner.cloud.stubbed.discovery.enabled: false
+server.port: ${PORT:8083}

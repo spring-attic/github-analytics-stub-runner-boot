@@ -50,7 +50,6 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-contract-verifier</artifactId>
-			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
@@ -59,7 +58,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Camden.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-bom.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
