@@ -1,3 +1,5 @@
-stubrunner.cloud.stubbed.discovery.enabled: false
+stubrunner:
+  cloud.stubbed.discovery.enabled: false
+  repositoryRoot: http://repo.spring.io/snapshot
 server.port: ${PORT:8083}
 spring.cloud.stream.defaultBinder: rabbit
