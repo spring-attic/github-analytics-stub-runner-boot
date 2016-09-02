@@ -6,11 +6,13 @@ import org.springframework.cloud.contract.stubrunner.server.EnableStubRunnerServ
 import org.springframework.cloud.contract.stubrunner.spring.AutoConfigureStubRunner;
 
 @SpringBootApplication
-@AutoConfigureStubRunner
 @EnableStubRunnerServer
 public class GithubAnalyticsStubRunnerBootApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GithubAnalyticsStubRunnerBootApplication.class, args);
 	}
+
+	@AutoConfigureStubRunner
+	static class Config {}
 }
