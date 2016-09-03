@@ -3,6 +3,6 @@ stubrunner:
   repositoryRoot: http://repo.spring.io/snapshot
 server.port: ${PORT:8083}
 spring:
-  cloud.stream.defaultBinder: rabbitp
+  cloud.stream.defaultBinder: rabbit
   application:
     name: stubrunner
