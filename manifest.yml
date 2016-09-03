@@ -1,6 +1,6 @@
 ---
 applications:
-- name: github-analytics-stub-runner-boot
+- name: stubrunner
   services:
     - github-rabbitmq
     - github-eureka
