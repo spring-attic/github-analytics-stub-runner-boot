@@ -5,7 +5,7 @@
 
 	<groupId>com.example.github</groupId>
 	<artifactId>github-analytics-stub-runner-boot</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>${version}</version>
 	<packaging>jar</packaging>
 
 	<name>github-analytics-stub-runner-boot</name>
@@ -24,9 +24,15 @@
 		<java.version>1.8</java.version>
 		<spring-cloud-contract.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-contract.version>
 		<spring-cloud-bom.version>Camden.BUILD-SNAPSHOT</spring-cloud-bom.version>
+		<version>0.0.1-SNAPSHOT</version>
 	</properties>
 
 	<distributionManagement>
+		<repository>
+			<id>repo.spring.io</id>
+			<name>Spring Milestone Repository</name>
+			<url>https://repo.spring.io/libs-milestone-local</url>
+		</repository>
 		<snapshotRepository>
 			<id>repo.spring.io</id>
 			<name>Spring Snapshot Repository</name>
