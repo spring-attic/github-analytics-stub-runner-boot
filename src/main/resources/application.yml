@@ -1,6 +1,6 @@
 stubrunner:
   cloud.stubbed.discovery.enabled: false
-  repositoryRoot: http://repo.spring.io/milestone
+  repositoryRoot: ${REPO_WITH_JARS:http://localhost:8081/artifactory/libs-release-local}
 server.port: ${PORT:8083}
 spring:
   cloud.stream.defaultBinder: rabbit
