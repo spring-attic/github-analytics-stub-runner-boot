@@ -156,7 +156,10 @@
 						<configuration>
 							<imageName>${docker.image.prefix}/${project.artifactId}</imageName>
 							<baseImage>frolvlad/alpine-oraclejdk8:slim</baseImage>
-							<entryPoint>["sh", "-c", "java -Djava.security.egd=file:/dev/./urandom -jar /${project.build.finalName}.jar"]</entryPoint>
+								<env>
+									<SYSTEM_PROPS>-Dfoo=bar</SYSTEM_PROPS>
+								</env>
+								<entryPoint>["sh", "-c", "java $${SYSTEM_PROPS} -Djava.security.egd=file:/dev/./urandom -jar /${project.build.finalName}.jar"]</entryPoint>
 							<resources>
 								<resource>
 									<targetPath>/</targetPath>
